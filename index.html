@@ -627,16 +627,13 @@
                             Write An Email
                         </a>
                     </div>
-                </div
-<html lang="en">
-<head>
-
-  <meta charset="UTF-8">
+                </div>
+                    <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Let’s Connect</title>
   <style>
     body {
-      background-color: #f7f9fc; /* Light background for better contrast */
+      background-color: #f8f9fa; /* Light background for contrast */
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
@@ -647,73 +644,93 @@
 
     .connect-container {
       max-width: 500px; /* Restricts width */
-      max-height: 450px; /* Restricts height */
+      max-height: 600px; /* Restricts height */
       width: 90%; /* Responsive width */
-      padding: 20px; /* Space inside the container */
-      border: 3px solid #ff6b6b; /* Bright pink border */
-      border-radius: 12px; /* Rounded corners */
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Bright gradient background */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+      padding: 20px; /* Inner spacing */
+      border: 2px solid #ccc; /* Basic gray border */
+      border-radius: 10px; /* Rounded corners */
+      background-color: #ffffff; /* White background */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
       text-align: center;
-      color: #333; /* Dark text for visibility */
     }
 
     .connect-container h1 {
-      font-size: 28px; /* Large heading */
-      color: #ff4757; /* Bright red for heading */
-      margin-bottom: 10px;
+      font-size: 24px; /* Visible heading size */
+      color: #333; /* Dark gray heading */
+      margin-bottom: 15px;
     }
 
-    .connect-container p {
-      font-size: 16px; /* Visible paragraph text */
-      margin-bottom: 20px;
+    .connect-container form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .connect-container input, .connect-container textarea {
+      width: 100%; /* Full width */
+      padding: 10px; /* Inner spacing */
+      margin-bottom: 15px; /* Space between inputs */
+      border: 1px solid #ccc; /* Basic gray border */
+      border-radius: 5px; /* Rounded corners */
+      font-size: 16px; /* Visible font size */
+    }
+
+    .connect-container textarea {
+      resize: none; /* Prevent resizing */
     }
 
     .connect-container button {
-      background-color: #ff4757; /* Bright red button */
+      background-color: #007bff; /* Blue button */
       color: #fff; /* White text */
       border: none;
-      border-radius: 8px;
+      border-radius: 5px; /* Rounded corners */
       padding: 10px 20px;
       font-size: 16px;
       font-weight: bold;
       cursor: pointer;
-      transition: 0.3s ease;
-      margin: 5px; /* Space between buttons */
+      margin-top: 10px;
+      transition: background-color 0.3s;
     }
 
     .connect-container button:hover {
-      background-color: #ff6b6b; /* Lighter red on hover */
-      transform: scale(1.05); /* Slight zoom on hover */
+      background-color: #0056b3; /* Darker blue on hover */
     }
 
     .connect-container .call-info {
       margin-top: 15px;
-      font-size: 14px;
-      color: #555; /* Subtle text for call details */
+      font-size: 14px; /* Slightly smaller font */
+      color: #555; /* Subtle text */
     }
 
     .connect-container .call-info a {
-      color: #ff4757; /* Highlight the phone number */
+      color: #007bff; /* Link in blue */
       font-weight: bold;
       text-decoration: none;
     }
 
     .connect-container .call-info a:hover {
-      text-decoration: underline; /* Add underline on hover */
+      text-decoration: underline; /* Underline on hover */
     }
   </style>
 </head>
 <body>
   <div class="connect-container">
     <h1>Let’s Connect</h1>
-    <p>We’re here to help you grow and succeed. Reach out to us today!</p>
-    <button>Contact Us</button>
-    <button>Connect Over Call</button>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
     <div class="call-info">
-      Prefer to talk? Call us at <a href="tel:+918349133444">+918349133444</a>
+      Prefer to talk? Call us at <a href="tel:+1234567890">+123 456 7890</a>
     </div>
   </div>
+</body>
+</html>
+
+
+  
 </body>
 </html>
 
