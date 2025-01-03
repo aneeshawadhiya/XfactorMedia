@@ -638,33 +638,34 @@
         <head>
   <style>
  .get-in-touch-box {
-  width: 300px; /* Set a fixed width */
-  height: 300px; /* Set a fixed height for a square or rectangle */
+  width: 300px; /* Width of the box */
+  height: auto; /* Height adjusts automatically based on content */
   margin: 20px auto;
-  padding: 15px;
+  padding: 10px; /* Reduced padding inside the box */
   background-color: #f9f9f9;
   border: 2px solid #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
+  box-sizing: border-box; /* Ensure padding is included in the width/height */
 }
 
 .get-in-touch-box h3 {
   text-align: center;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 8px; /* Reduced margin for compactness */
   color: #333;
 }
 
 .get-in-touch-box .form-row {
   display: flex;
-  gap: 5px; /* Add spacing between the inputs */
-  margin-bottom: 10px;
+  gap: 4px; /* Smaller gap between inputs */
+  margin-bottom: 8px; /* Reduced margin between input rows */
 }
 
 .get-in-touch-box .form-row input {
-  width: 50%; /* Divide the width between two inputs */
-  padding: 6px;
+  width: 48%; /* Adjust input width for side-by-side layout */
+  padding: 4px; /* Reduced padding for input fields */
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 13px;
@@ -673,11 +674,12 @@
 .get-in-touch-box input,
 .get-in-touch-box textarea {
   width: 100%;
-  padding: 6px;
-  margin-bottom: 8px;
+  padding: 4px; /* Reduced padding for input fields and textarea */
+  margin-bottom: 6px; /* Smaller gap between elements */
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 13px;
+  box-sizing: border-box; /* Ensures padding stays inside the element */
 }
 
 .get-in-touch-box textarea {
@@ -686,7 +688,7 @@
 
 .get-in-touch-box button {
   width: 100%;
-  padding: 8px;
+  padding: 6px; /* Reduced padding for the button */
   border: none;
   background-color: #007BFF;
   color: white;
@@ -697,6 +699,7 @@
 
 .get-in-touch-box button:hover {
   background-color: #0056b3;
+}
 }
   </style>
 </head>
