@@ -626,8 +626,7 @@
                             Write An Email
                         </a>
                     </div>
-                </div
-       <div class="get-in-touch-box">
+    <div class="get-in-touch-box">
   <h3>Get in Touch</h3>
   <form action="/submit-form" method="POST">
     <input type="text" name="name" placeholder="Name" required />
@@ -636,14 +635,16 @@
     <textarea name="message" placeholder="Message" rows="3" required></textarea>
     <button type="submit">Submit</button>
   </form>
-</div>
-                .get-in-touch-box {
-  width: 300px;
+        <head>
+  <style>
+   .get-in-touch-box {
+  width: 280px;
   margin: 20px auto;
   padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
+  background-color: #f9f9f9;
+  border: 2px solid #fff; /* White boundary */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
 }
 
@@ -660,8 +661,9 @@
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 4px;
   font-size: 14px;
+  background-color: #fff;
 }
 
 .get-in-touch-box textarea {
@@ -675,18 +677,16 @@
   background-color: #007BFF;
   color: white;
   font-size: 14px;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .get-in-touch-box button:hover {
   background-color: #0056b3;
 }
-
-.get-in-touch-box {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-            
+  </style>
+</head>
+</div>
 </div>
   <script>
     const form = document.getElementById('contactForm');
