@@ -632,15 +632,16 @@
     <input type="text" name="name" placeholder="Name" required />
     <input type="email" name="email" placeholder="Email" required />
     <input type="tel" name="phone" placeholder="Phone Number" required />
-    <textarea name="message" placeholder="Message" rows="3" required></textarea>
+    <textarea name="message" placeholder="Message" rows="2" required></textarea>
     <button type="submit">Submit</button>
   </form>
         <head>
   <style>
  .get-in-touch-box {
-  width: 240px; /* Reduced width */
+  width: 300px; /* Set a fixed width */
+  height: 300px; /* Set a fixed height for a square or rectangle */
   margin: 20px auto;
-  padding: 10px; /* Reduced padding */
+  padding: 15px;
   background-color: #f9f9f9;
   border: 2px solid #fff;
   border-radius: 8px;
@@ -650,19 +651,33 @@
 
 .get-in-touch-box h3 {
   text-align: center;
-  font-size: 16px; /* Reduced font size */
+  font-size: 16px;
   margin-bottom: 10px;
   color: #333;
+}
+
+.get-in-touch-box .form-row {
+  display: flex;
+  gap: 5px; /* Add spacing between the inputs */
+  margin-bottom: 10px;
+}
+
+.get-in-touch-box .form-row input {
+  width: 50%; /* Divide the width between two inputs */
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
 }
 
 .get-in-touch-box input,
 .get-in-touch-box textarea {
   width: 100%;
-  padding: 6px; /* Reduced input padding */
-  margin-bottom: 8px; /* Reduced margin between fields */
+  padding: 6px;
+  margin-bottom: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 13px; /* Reduced font size */
+  font-size: 13px;
 }
 
 .get-in-touch-box textarea {
@@ -671,11 +686,11 @@
 
 .get-in-touch-box button {
   width: 100%;
-  padding: 6px; /* Reduced button padding */
+  padding: 8px;
   border: none;
   background-color: #007BFF;
   color: white;
-  font-size: 13px; /* Reduced font size */
+  font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
 }
