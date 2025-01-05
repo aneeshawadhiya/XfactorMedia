@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-      
+      margin: 0; /* Remove any default margin */
 
   <img src="images/div.gradient-wrapper.svg" alt="universe" width="device-width" height="device-width margin: 0; /* Remove any default margin */>
 </body>
@@ -49,7 +49,7 @@
         <header class="s-header">
 
             <div class="s-header__block">
-                <span style="color: white; align: top left;">
+                <span style="color: white;">
                     
                 </span>
                 <div class="s-header__logo">
@@ -556,10 +556,88 @@
                             Write An Email
                         </a>
                     </div>
-                    
+    <div class="get-in-touch-box">
+  <h3>Get in Touch</h3>
+  <form action="/submit-form" method="POST">
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="tel" name="phone" placeholder="Phone Number" required />
+   <input type="tel" name="Message" placeholder="Message" required />
+    <button type="submit">Submit</button>
+  </form>
+        <head>
+  <style>
+ .get-in-touch-box {
+  width: 500px; /* Width of the box */
+  height: auto; /* Height adjusts automatically based on content */
+  background-color: #fffbee;
+  border: 4px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  box-sizing: border-box; /* Ensure padding is included in the width/height */
+  margin: 0 auto; /* Center align the box horizontally */
+}
+
+.get-in-touch-box h3 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+}
+
+.get-in-touch-box .form-row {
+  display: flex;
+  gap: 4px; /* Smaller gap between inputs */
+  margin-bottom: 4px; /* Reduced margin between input rows */
+}
+
+.get-in-touch-box .form-row input {
+  width: 48%; /* Adjust input width for side-by-side layout */
+  padding: 4px; /* Reduced padding for input fields */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.get-in-touch-box button {
+  width: 100%;
+    height: 60%;
+  padding: 16px; /* Reduced padding for the button */
+  border: none;
+  background-color: #007BFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.get-in-touch-box button:hover {
+     padding: 8px;
+    
+  background-color: #0056b3;
+}
+}
+  </style>
+</head>
+</div>
+</div>
+  <script>
+    const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      successMessage.style.display = 'block';
+      form.reset();
+    });
+  </script>
+</body>
+</html>
 
                     
-        
+            </div>
 
             <footer class="s-footer">
 
