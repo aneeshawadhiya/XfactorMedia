@@ -118,13 +118,14 @@
     }
 
     .marquee-container {
-      width: auto;
+      width: 100vw;
       overflow: hidden;
       background: linear-gradient(90deg, #ff9800, #f44336, #2196f3);
       padding: 3px 0;
-      border-top: 3px solid #333;
-      border-bottom: 3px solid #333;
-      position: relative;
+     top: 0 solid #333;
+    bottom: 0 solid #333;
+        z-index: 9999;
+      position: fixed;
     }
 
     .marquee-text {
