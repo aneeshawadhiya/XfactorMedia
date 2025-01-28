@@ -107,8 +107,8 @@
                     </div>
                 </div>
             </div>
-        <div class="marquee-text">
-              <title>Creative Running Strip Text</title>
+    <div>
+  <title>Full-Width Running Strip Text</title>
   <style>
     body {
       margin: 0;
@@ -118,14 +118,14 @@
     }
 
     .marquee-container {
-      width: 100vw;
+      width: 100vw; /* Full width of the viewport */
       overflow: hidden;
       background: linear-gradient(90deg, #ff9800, #f44336, #2196f3);
-      padding: 3px 0;
-     top: 0 solid #333;
-    bottom: 0 solid #333;
-        z-index: 9999;
-      position: fixed;
+      padding: 15px 0;
+      position: fixed; /* Sticks to the top for infinity effect */
+      top: 0;
+      left: 0;
+      z-index: 9999; /* Ensures it stays on top of other elements */
     }
 
     .marquee-text {
@@ -139,7 +139,6 @@
       letter-spacing: 1px;
     }
 
-    /* Add a glow effect */
     .marquee-text:hover {
       text-shadow: 0 0 10px #ff9800, 0 0 20px #f44336, 0 0 30px #2196f3;
       cursor: pointer;
@@ -158,20 +157,18 @@
 <body>
   <div class="marquee-container">
     <div class="marquee-text">
-      🚀 Investing in your Business is Investing in your Future 🚀
-        🚀 Investing in your Business is Investing in your Future 🚀
-        🚀 Investing in your Business is Investing in your Future 🚀
-        🚀 Investing in your Business is Investing in your Future 🚀
-        🚀 Investing in your Business is Investing in your Future 🚀
-        🚀 Investing in your Business is Investing in your Future 🚀
-        🚀 Investing in your Business is Investing in your Future 🚀
-        🚀 Investing in your Business is Investing in your Future 🚀
-        🚀 Investing in your Business is Investing in your Future 🚀
-        🚀 Investing in your Business is Investing in your Future 🚀
+      🚀 Welcome to XFactor Media! 🎨 Innovative ideas. 💡 Creative minds. 🔥 Stunning advertisements for Hero MotoCorp and beyond.
     </div>
-       </div>
-</body>
+  </div>
 
+  <!-- Your website content -->
+  <div style="padding: 100px;">
+    <h1>Website Content Goes Here</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+</body>
+    
+ </div>
      </div>
     
 
